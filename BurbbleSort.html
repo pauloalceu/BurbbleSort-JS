@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript" src="BurbbleSort.js"></script>
+
+
+<canvas id="myCanvas" width="1000" height="500"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var vetorDesordenado  = [54,42,11,33,24,99,77,80];
+
+ctx.font = "30px Arial";
+ctx.fillText("Vetor Desordenado: " + vetorDesordenado, 10, 50);
+let vetorOrdenadoViaBurbbleSort = burbbleSort(vetorDesordenado, 0, vetorDesordenado.length);
+ctx.fillText("Vetor Ordenado: " + vetorOrdenadoViaBurbbleSort, 10, 90);
+
+</script>
+
+</body>
+</html>
